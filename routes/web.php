@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+ 
+
+   // ***Login ****//
+
+Route::get('/login','Auth\LoginController@login')->name('login');
